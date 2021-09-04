@@ -4,9 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-chalice = "*"
+chalice = {extras = ["cdk"], version = "*"}
+"aws-cdk.aws-cognito" = "*"
+"aws-cdk.core" = "*"
+"aws-cdk.aws-iam" = "*"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.8"
